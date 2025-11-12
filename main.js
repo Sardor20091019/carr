@@ -1,8 +1,9 @@
-const baseUrl = "https://cars-project-six.vercel.app",
-  hero_img_block = document.querySelector(".hero_img-block"),
-  choose_car_btn = document.querySelectorAll(".choose_car_btn"),
-  choose_car_list = document.querySelector(".choose_car_list"),
-  cardListRender = (e, t) => {
+const baseUrl = "https://cars-project-six.vercel.app"; const modeBtn = document.querySelector(".mode");
+
+const  hero_img_block = document.querySelector(".hero_img-block");
+const  choose_car_btn = document.querySelectorAll(".choose_car_btn");
+ const choose_car_list = document.querySelector(".choose_car_list");
+ const cardListRender = (e, t) => {
     choose_car_list.innerHTML = e
       .map(
         (e) =>
@@ -101,3 +102,10 @@ document.querySelector(".slider_btn.next").addEventListener("click", () => {
   fetch(`${baseUrl}/banners`)
     .then((e) => e.json())
     .then((e) => bannerRender(e));
+
+
+modeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  modeBtn.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
+});
+
