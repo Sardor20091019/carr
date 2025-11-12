@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Car-rental</title>
+  </head>
+  <body>
+    <header>
+      <section class="header">
+        <div class="container">
+          <div class="header_block">
+            <div class="header_content">
+              <a class="header_img" href="#">
+                <img src="logo_img.svg" alt="Car-rental" />
+              </a>
+              <ul class="header_list">
+                <li class="header_item">Categories</li>
+                <li class="header_item">About Us</li>
+                <li class="header_item">Help center</li>
+              </ul>
+            </div>
+            <div class="header_content">
+              <a class="header_num" target="_blank" href="tel:+1-855-420-0000"
+                >+1 855 420 0000</a
+              >
+              <button class="mode" type="button"></button>
+              <button class="login" type="button">Login</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="intro">
+        <div class="container">
+          <div class="intro_block">
+            <section class="hero">
+              <div class="slider">
+                <div class="slides"></div>
+                <button class="slider_btn prev"><</button>
+                <button class="slider_btn next">></button>
+              </div>
+            </section>
+            <div class="intro_search">
+              <label class="search_label" for="search"></label>
+              <input
+                class="search"
+                id="search"
+                type="search"
+                name="search"
+                placeholder="Find the car of your dreams"
+                required
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="choose_car">
+        <div class="container">
+          <div class="choose_car_block">
+            <div class="choose_car_text_content">
+              <h2 class="choose_car_title">Choose the car of your dreams</h2>
+              <p class="choose_car_text">
+                We provide our customers with the most incredible driving
+                emotions. That is why there are only world-class cars in our
+                fleet
+              </p>
+            </div>
+
+            <div class="choose_car_content">
+              <div class="choose_car_btns">
+                <button
+                  value="bmw"
+                  class="choose_car_btn active__btn"
+                  type="button"
+                >
+                  BMW
+                </button>
+                <button value="mercedes" class="choose_car_btn" type="button">
+                  Mercedes
+                </button>
+                <button value="chevrolet" class="choose_car_btn" type="button">
+                  Chevrolet
+                </button>
+                <button value="lexus" class="choose_car_btn" type="button">
+                  Lexus
+                </button>
+              </div>
+
+              <ul class="choose_car_list"></ul>
+
+              <div class="choose_car_view_btn">
+                <button class="choose_car_btn" id="viewAll" type="button">
+                  View all cars
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="car_modal">
+        <div class="car_modal_content">
+          <button class="car_modal_close">✕</button>
+          <div class="car_modal_info"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
